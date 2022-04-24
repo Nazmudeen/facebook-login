@@ -41,34 +41,35 @@
                 <div class="right-section">
                     <h1> Create an account</h1>
                     <h2>it's quick and easy</h2>
-                    <table class="main-table">
+                    <table class="main-table" id="signup-form">
                         <tr>
                             <td>
-                                <form action="">
-                                    <input type="text" placeholder="firstname" class="fontsection">
+                                <form action="" >
+                                    <input name="fname" type="text" placeholder="firstname" class="fontsection">
                                 </form>
                             </td>
                             <td>
                                 <form>
-                                    <input type="text" placeholder="surname" class="fontsection">
+                                    <input name="sname" type="text" placeholder="surname" class="fontsection">
                                 </form>
                             </td>
                         </tr>
                        
                     </table>
                     <form>
-                        <input type="text" placeholder="mobile number or email address" class="fontsection-for-form">
+                        <input name="egmail" type="text" placeholder="mobile number or email address" class="fontsection-for-form">
                     </form>
                     <form>
-                        <input type="password" placeholder="New password" class="fontsection-for-form">
+                        <input name="passw"type="password" placeholder="New password" class="fontsection-for-form">
                     </form>
                     <label style="color:rgb(62, 64, 66);">Birthday</label>
                     <table>
                         <tr>
                             <td>
                                 <form>
-                                    <select>
-                                        <option>1</option>
+                                    <select name="day">
+                                        <option value="">day</option>
+                                        <option value="1">1</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
@@ -104,7 +105,7 @@
                             </td>
                             <td>
                                 <form>
-                                    <select>
+                                    <select name="month">
                                         <option>JAN</option>
                                         <option>FEB</option>
                                         <option>MAR</option>
@@ -122,7 +123,7 @@
                             </td>
                             <td>
                                 <form>
-                                    <select>
+                                    <select name="year">
                                         <option>1995</option>
                                         <option>1996</option>
                                         <option>1997</option>
@@ -167,19 +168,19 @@
                         <tr>
                             <td>
                                 <form>
-                                    <input type="radio">
+                                    <input name="gender" type="radio">
                                     <label>female</label>
                                 </form>
                             </td>
                             <td>
                                 <form>
-                                    <input type="radio">
+                                    <input name="gender" type="radio">
                                     <label>male</label>
                                 </form>
                             </td>
                             <td>
                                 <form>
-                                    <input type="radio">
+                                    <input name="gender"type="radio">
                                     <label>Custom</label>
                                 </form>
                             </td>
@@ -193,12 +194,15 @@
                     <p style="color: rgb(62, 64, 66);">By clicking sign up,you agree to out<a href="index.html" class="textdec">Terms,data,policy</a><br>
                     and <a href="index.html" class="textdec">cookie policy</a>you may receive SMS notification from<br>
                     us and can opt out at any time.</p>
-                    <button class="sign-up-button">sign up</button>
+                    <input type="submit" class="sign-up-button" placeholder="signup">
                     <p style="color: rgb(62, 64, 66)" class="baseline"><a href="index.html">create a page</a> for a celebrity</p>
                 </div>
 
             </div>
 
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
